@@ -1,6 +1,6 @@
 # jupyterhub-nird-toolkit
 
-[Docker image](https://hub.docker.com/r/nordicesmhub/jupyterhub-nird-toolkit) for Jupyterhub NIRD toolkit.
+[Docker image](https://hub.docker.com/r/tomastorsvik/nird_jupyterhub-singleuser_esmvaltool) for Jupyterhub NIRD toolkit.
 
 esmvalTool is available in the esmvaltool conda environment in the jupyterhub.
 
