@@ -1,11 +1,8 @@
 # jupyterhub-nird-toolkit
 
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
-[![Docker Build Status](https://img.shields.io/docker/build/tomastorsvik/nird_jupyterhub-singleuser_esmvaltool)](https://hub.docker.com/r/tomastorsvik/nird_jupyterhub-singleuser_esmvaltool/)
-
 [Docker image](https://hub.docker.com/r/tomastorsvik/nird_jupyterhub-singleuser_esmvaltool) for Jupyterhub NIRD toolkit.
 
-esmvalTool is available in the esmvaltool conda environment in the jupyterhub.
+ESMValTool is available in the esmvaltool conda environment in the jupyterhub.
 
 ## Activate esmvaltool conda environment in the jupyterhub
 
@@ -19,6 +16,18 @@ python -m ipykernel install --user --name=esmvaltool
 Then restart your server to see esmvaltool environment (as shown on the figure below).
 
 ![](esmvaltool.png)
+
+
+## Install standard python and R diagnostic scripts
+
+ESMValTool can run as a stand-alone application, preprocessing scripts defined by ESMValCore are installed, if the user provides full diagnostic recipes for the toolbox. However, in most cases it is more useful to apply or modify existing diagnostic scripts. These are not installed by default, but can be installed by the method described in the "contribution" section of the ESMValTool documentation. First, make a copy of a ESMValTool version (preferably a tagged version such as v2.0.0b2) and place somewhere in your home folder (e.g. ~/src/esmvaltool). Then run installation scripts for python and R
+
+```
+source activate esmvaltool
+cd ~/src/esmvaltool
+pip install -e '.[develop]'
+Rscript esmvaltool/install/R/setup.R
+```
 
 
 ## Using esmvaltool from the command line
