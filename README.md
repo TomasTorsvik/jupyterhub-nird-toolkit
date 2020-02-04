@@ -1,5 +1,8 @@
 # jupyterhub-nird-toolkit
 
+![GitHub](https://img.shields.io/github/license/TomasTorsvik/jupyterhub-nird-toolkit)
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/tomastorsvik/nird_jupyterhub-singleuser_esmvaltool)](https://hub.docker.com/r/tomastorsvik/nird_jupyterhub-singleuser_esmvaltool)
+
 [Docker image](https://hub.docker.com/r/tomastorsvik/nird_jupyterhub-singleuser_esmvaltool) for Jupyterhub NIRD toolkit.
 
 ESMValTool is available in the esmvaltool conda environment in the jupyterhub.
